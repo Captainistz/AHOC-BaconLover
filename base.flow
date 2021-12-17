@@ -1,0 +1,238 @@
+{
+    "connections": [
+        {
+            "in_id": "{2d92957a-f419-49b8-8be3-f0639c21bcea}",
+            "in_index": 0,
+            "out_id": "{bacf8f5d-734d-4eaa-9538-aa1d3396207d}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{9f271228-8125-4cdc-aec1-f76326f16413}",
+            "in_index": 0,
+            "out_id": "{9deb9f73-8f80-4d83-bc77-6df4ff76fc70}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{bacf8f5d-734d-4eaa-9538-aa1d3396207d}",
+            "in_index": 0,
+            "out_id": "{9deb9f73-8f80-4d83-bc77-6df4ff76fc70}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{bdb5cec0-251c-42f3-85da-a4bf6cfd4323}",
+            "in_index": 0,
+            "out_id": "{bacf8f5d-734d-4eaa-9538-aa1d3396207d}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{f37b8370-b68a-4221-98bb-0c07bbcec01b}",
+            "in_index": 0,
+            "out_id": "{a02d7e35-0ec3-497a-968c-bed7e326b1ab}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{9deb9f73-8f80-4d83-bc77-6df4ff76fc70}",
+            "in_index": 0,
+            "out_id": "{f37b8370-b68a-4221-98bb-0c07bbcec01b}",
+            "out_index": 0
+        },
+        {
+            "in_id": "{a02d7e35-0ec3-497a-968c-bed7e326b1ab}",
+            "in_index": 0,
+            "out_id": "{bacf8f5d-734d-4eaa-9538-aa1d3396207d}",
+            "out_index": 0
+        }
+    ],
+    "nodes": [
+        {
+            "id": "{2d92957a-f419-49b8-8be3-f0639c21bcea}",
+            "model": {
+                "height": 650,
+                "name": "Debug",
+                "output_h": 0,
+                "output_v": 0,
+                "page_index": 2,
+                "payload_h": 0,
+                "payload_v": 469,
+                "width": 330
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 466.58900000000017,
+                "y": 15.512999999999963
+            }
+        },
+        {
+            "id": "{a02d7e35-0ec3-497a-968c-bed7e326b1ab}",
+            "model": {
+                "name": "ButtonRun"
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": -363.85299999999995,
+                "y": -229.79700000000003
+            }
+        },
+        {
+            "id": "{9deb9f73-8f80-4d83-bc77-6df4ff76fc70}",
+            "model": {
+                "data": {
+                    "current_index": 22,
+                    "images_count": 40,
+                    "images_dir": "C:/Users/capta/Desktop/ahoc/FaceMask_dataset/all",
+                    "loop": null
+                },
+                "name": "ImageSlide",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": -77,
+                "y": -83
+            }
+        },
+        {
+            "id": "{9f271228-8125-4cdc-aec1-f76326f16413}",
+            "model": {
+                "height": 292,
+                "name": "Debug",
+                "output_h": 0,
+                "output_v": 0,
+                "page_index": 2,
+                "payload_h": 0,
+                "payload_v": 0,
+                "width": 146
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 68.6462,
+                "y": 148.3923
+            }
+        },
+        {
+            "id": "{bacf8f5d-734d-4eaa-9538-aa1d3396207d}",
+            "model": {
+                "data": {
+                    "curr_tap": 0,
+                    "draw_roi": true,
+                    "enable_tracking": false,
+                    "font_scale": 1.2,
+                    "font_thickness": 2,
+                    "frame_buffer": 5,
+                    "map_det_cfgs": [
+                        {
+                            "backend_gpu": true,
+                            "config_name": "mask",
+                            "config_path": "C:/Users/capta/Desktop/ahoc/trained/v4_1"
+                        }
+                    ],
+                    "max_dist": 150,
+                    "nms": 0.4,
+                    "rect_thickness": 2,
+                    "result_drawing": true,
+                    "roi_h": 5000,
+                    "roi_w": 5000,
+                    "roi_x": 0,
+                    "roi_y": 0,
+                    "show_confidence": true,
+                    "text_drawing": true,
+                    "this_config_name": "mask",
+                    "thresh": 50,
+                    "txt_offset": 10
+                },
+                "name": "DeepDetect ",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 189.66750000000005,
+                "y": -80.79170000000005
+            }
+        },
+        {
+            "id": "{f37b8370-b68a-4221-98bb-0c07bbcec01b}",
+            "model": {
+                "delay_time": 1000,
+                "name": "Delay",
+                "node_enable": true
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": -213.15800000000004,
+                "y": -179.99299999999982
+            }
+        },
+        {
+            "id": "{bdb5cec0-251c-42f3-85da-a4bf6cfd4323}",
+            "model": {
+                "height": 83,
+                "label": {
+                    "bold": false,
+                    "font": "Ubuntu",
+                    "height": 404,
+                    "key": "if(payload.DeepDetect.count==4){\n  label  = \"This mask is fucking good\"\n}else{\nlabel = \"This mask is fucking bad\"\n}",
+                    "size": 12,
+                    "widget_state": {
+                        "auto_indent": true,
+                        "auto_parent": true,
+                        "size": 11,
+                        "splt0": 245,
+                        "splt1": 61,
+                        "style": "Dracula",
+                        "widget_st_w": 0,
+                        "word_wrap": false
+                    },
+                    "width": 416
+                },
+                "name": "Label",
+                "node_enable": true,
+                "width": 104
+            },
+            "ngo": {
+                "comment": {
+                    "data": "",
+                    "show": false
+                }
+            },
+            "position": {
+                "x": 488.30000000000007,
+                "y": -223.9000000000001
+            }
+        }
+    ],
+    "scene_data": {
+        "flow_view_pos_x": 115.08400000000444,
+        "flow_view_pos_y": 37.943800000000905,
+        "flow_view_zoom_factor": 0.7513148009015777
+    }
+}
